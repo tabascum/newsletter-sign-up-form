@@ -1,0 +1,152 @@
+@import "base.css";
+
+body {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--charcoal-grey);
+  font-family: "Roboto", sans-serif;
+}
+
+.main-container {
+  display: flex;
+  align-items: center;
+  max-width: 1440px;
+  background-color: var(--white);
+  border-radius: 2rem;
+}
+
+.sucess-container {
+  display: none;
+  align-items: center;
+  max-width: 1440px;
+  background-color: var(--white);
+  border-radius: 2rem;
+}
+
+.sucess-container article {
+  padding: 3rem 3.5rem;
+  height: auto;
+  max-width: 30rem;
+  display: inherit;
+  flex-direction: column;
+  align-items: start;
+}
+
+.sucess-container article h1 {
+  font-size: 3.2rem;
+  font-weight: 700;
+  color: var(--dark-slate-grey);
+  margin-block-end: 1rem;
+  line-height: 3.2rem;
+  margin-block: 2rem;
+}
+
+.sucess-container article div {
+  margin-block-end: 2.5rem;
+  line-height: 1.5rem;
+}
+
+.sucess-container article div #dynamic-email {
+  font-weight: 700;
+}
+
+.main-content {
+  padding-inline: 3.5rem 2.5rem;
+  display: inherit;
+  flex-direction: column;
+  justify-content: space-between;
+  color: var(--charcoal-grey);
+  width: 27rem;
+}
+
+.main-content h1 {
+  font-size: 3.2rem;
+  font-weight: 700;
+  color: var(--dark-slate-grey);
+  margin-block-end: 1rem;
+}
+
+.main-content p {
+  font-size: 0.9rem;
+}
+
+.main-content ul {
+  list-style: none;
+  padding-block: 1rem;
+}
+
+.main-content ul li {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0.5rem 0;
+  gap: 1rem;
+}
+
+.main-content form {
+  display: flex;
+  flex-direction: column;
+}
+
+.main-content form .form-labels {
+  display: inherit;
+  margin-block-end: 0.5rem;
+  justify-content: space-between;
+  font-size: 0.7rem;
+  font-weight: 700;
+  color: var(--dark-slate-grey);
+}
+
+.main-content form .form-labels #label-error {
+  color: var(--tomato);
+  display: none;
+}
+
+.main-content form input,
+.sucess-container .button {
+  height: 3.5rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  font-size: 0.9rem;
+  width: 100%;
+}
+
+.main-content form input[type="email"] {
+  border: 0.1rem solid var(--grey);
+  padding-inline-start: 1rem;
+  width: 100%;
+  margin-block-end: 1.5rem;
+}
+
+.main-content form input[type="button"],
+.sucess-container .button {
+  background-color: var(--dark-slate-grey);
+  color: var(--white);
+  font-weight: 700;
+  border: none;
+}
+
+.main-content form input[type="button"]:hover,
+.sucess-container .button:hover {
+  background: linear-gradient(
+    to right,
+    hsl(346.43, 91.3%, 63.92%) 30%,
+    hsl(14.62, 100%, 61.37%) 60%
+  );
+  position: relative;
+}
+
+.main-image {
+  width: 25rem;
+  padding: 1.5rem;
+  display: flex;
+  align-items: center;
+}
+
+.main-image img {
+  width: 100%;
+  height: 100%;
+}
