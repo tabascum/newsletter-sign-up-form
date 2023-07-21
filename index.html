@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
   <link rel="stylesheet" href="./assets/css/style.css">
+  <script src="./assets/js/main.js" defer></script>
 
   <title>Newsletter sign-up form with success message | Vasco Marques</title>
 
@@ -25,9 +26,9 @@
 
   <!-- Sign-up form start -->
 
-  <main class="main-container">
+  <main class="container subscribe">
     <section class="main-content">
-      <h1>Stay updated!</h1>
+      <h1 class="content-title">Stay updated!</h1>
 
       <p>Join 60,000+ product managers receiving monthly updates on:</p>
 
@@ -57,7 +58,7 @@
         </span>
         <input type="email" name="email" id="email" placeholder="email@company.com" autocomplete="off">
 
-        <input type="button" value="Subscribe to monthly newsletter">
+        <input type="button" id="subscribe-btn" value="Subscribe to monthly newsletter">
       </form>
 
     </section>
@@ -72,19 +73,19 @@
 
   <!-- Success message start -->
 
-  <section class="sucess-container">
+  <section class="container sucess">
     <article>
 
       <picture>
         <img src="./assets/images/icon-success.svg" alt="">
       </picture>
 
-      <h1>
+      <h1 class="content-title">
         Thanks for subscribing!
       </h1>
 
       <div>
-        <p>A confirmation email has been sent to <span id="dynamic-email">ash@loremcompany.com</span>.
+        <p>A confirmation email has been sent to <span id="dynamic-email"></span>.
           Please open it and click the button inside to confirm your subscription.</p>
       </div>
 
