@@ -15,7 +15,11 @@ subscribeBtn.onclick = () => {
     ? (error.style.display = "none") &&
       (sucessPage.style.display = "flex") &&
       (subscribePage.style.display = "none")
-    : (error.style.display = "flex") && (sucessPage.style.display = "none");
+    : (error.style.display = "flex") &&
+      (sucessPage.style.display = "none") &&
+      (emailAdress.style.backgroundColor = "hsl(4, 100%, 90%)");
+
+  emailAdress.value = "";
 };
 
 dismissBtn.onclick = () => {
