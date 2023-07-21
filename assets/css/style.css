@@ -93,7 +93,6 @@ body {
   color: var(--white);
   font-weight: 700;
   border: none;
-  transition: box-shadow 0.4s all;
 }
 
 .main-content form input[type="button"]:hover,
