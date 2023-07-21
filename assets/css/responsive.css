@@ -1,0 +1,42 @@
+@media (max-width: 850px) {
+  .container {
+    border-radius: 0 !important;
+  }
+
+  .subscribe {
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    height: 100vh;
+    max-width: 50vw;
+  }
+
+  .subscribe .main-content {
+    width: 100%;
+    padding: 4rem 1rem;
+  }
+
+  .subscribe .main-image {
+    background: url("../images/illustration-sign-up-mobile.svg") top no-repeat;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    border-radius: 0 0 1rem 1rem;
+  }
+
+  .subscribe .main-image img {
+    display: none;
+  }
+
+  .sucess {
+    height: 100%;
+  }
+
+  .sucess article {
+    height: 100%;
+  }
+
+  .sucess .button {
+    margin-block-start: 10rem;
+  }
+}
